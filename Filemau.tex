@@ -1,0 +1,617 @@
+\documentclass[Main.tex]{subfiles}
+\begin{document}
+	\setcounter{tocdepth}{1}
+	\setcounter{secnumdepth}{3}
+	\begin{center}
+		\begin{tcolorbox}[enhanced,hbox,
+			left=8mm,right=8mm,boxrule=0.55pt,
+			bottom=3pt,
+			colback=cyan!5,colframe=darkmidnightblue,
+			% drop fuzzy midday shadow=black!50!yellow,
+			drop lifted shadow=black!50!darkmidnightblue,arc is angular,
+			before=\par\vspace*{-1mm},after=\par\bigskip]
+			{\Large\bfseries\sffamily\color{darkmidnightblue} MỤC LỤC}
+		\end{tcolorbox}
+	\end{center}
+	
+	\vspace*{-0.5cm}
+	\makeatletter
+	\@starttoc{toc}
+	\makeatother
+	
+	\def\muctieu{Trong chương này, chúng ta tìm hiểu những nội dung sau: mệnh đề toán học, tập hợp và các phép toán trên tập hợp.}
+	\chapter{Mệnh đề toán học tập hợp}
+	
+	\section{Mệnh đề toán học}
+	
+	\noindent
+	H' Maryam: \lq\lq\textit{Số $15$ chia hết cho $5$}\rq\rq
+	
+	\noindent
+	Phương: \lq\lq\textit{Việt Nam là một nước ở khu vực Đông Nam Á}\rq\rq
+	
+	\begin{cauhoikd}
+		Trong hai phát biểu trên, phát biểu nào là mệnh đề toán học?
+	\end{cauhoikd}
+	
+	\subsection{Mệnh đề toán học}
+	
+	\newcommand{\nhanmanh}[2][darkmidnightblue]{{\large\color{#1}\textit{#2}}}
+	
+	\begin{hd}
+		\begin{enumerate}
+			\item Phát biểu của bạn H'Maryam có phải là một câu khẳng định về tính chất chia hết trong toán học hay không?
+			\item Phát biểu của bạn Phương có phải là một câu khẳng định về một sự kiện trong toán học hay không?
+		\end{enumerate}
+	\end{hd}
+	
+	\begin{trithuc}
+		\begin{itemize}
+			\item Ta chưa khẳng định được tính đúng sai của câu \lq\lq $n$ chia hết cho $3$\rq\rq\ với $n$ là số tự nhiên.
+			\item Với mỗi giá trị cụ thể của biến $n$, câu này cho ta một mệnh đề toán học mà ta có thể khẳng định được tính đúng sai của mệnh đề đó.
+		\end{itemize}
+	\end{trithuc}
+	\begin{luuy}
+		Với mỗi giá trị cụ thể của biến $n$, câu này cho ta một mệnh đề toán học mà ta có thể khẳng định được tính đúng sai của mệnh đề đó.
+	\end{luuy}
+	
+	\begin{vd}
+		Mệnh đề \lq\lq Có một số tự nhiên mà bình phương của nó bằng 3\rq\rq\ được viết là
+		$\exists x \in \mathbb{N},\, x^2=3.$
+	\end{vd}
+	
+	\subsection{RÈN LUYỆN KĨ NĂNG GIẢI TOÁN}
+	\begin{dang}{Mệnh đề, mệnh đề toán học, phủ định của mệnh đề}
+		\begin{enumerate}
+			\item Mệnh đề
+			\begin{enumerate}
+				\item Khẳng định đúng là mệnh đề đúng, khẳng định sai là mệnh đề sai.
+				\item Câu không phải là câu khẳng định hoặc câu khẳng định mà không có tính đúng-sai đều không phải là mệnh đề.
+			\end{enumerate}
+			\item Các mệnh đề liên quan đến toán học gọi là mệnh đề toán học.
+			\item Cho mệnh đề $P$. 
+			\begin{enumerate}
+				\item Mệnh đề phủ định của $P$, kí hiệu là $\overline{P}$.
+				\item Nếu $P$ đúng thì $\overline{P}$ \textbf{sai}; $P$ \textbf{sai} thì $\overline{P}$ đúng.
+			\end{enumerate}
+		\end{enumerate}	
+	\end{dang}
+	
+	\begin{note}
+		Khi không sợ nhầm lẫn, ta thường gọi tắt mệnh để toán học là mệnh đề.
+	\end{note}
+	
+	\begin{vd}
+		Phát biểu nào sau đây là một mệnh đề toán học?
+		\begin{enumerate}
+			\item Hà Nội là Thủ đô của Việt Nam;
+			\item Số $\pi$ là một số hữu tỉ;
+			\item $x=1$ có phải là nghiệm của phưởng trình $x^2-1=0$
+			không?
+		\end{enumerate}
+		\loigiai{
+			\begin{paracol}{2}
+				\noindent
+				Câu \circlenum{1} không phải là một mệnh đề toán học.\\
+				Câu \circlenum{2} là một mệnh đề toán học.\\
+				Câu \circlenum{3} là một câu hỏi nên không phải là một mệnh đề toán~học.
+				\switchcolumn
+				\begin{luyentap}
+					Nêu hai ví dụ về mệnh đề toán học.
+				\end{luyentap}
+			\end{paracol}
+		}
+	\end{vd}
+	
+	\begin{luyentap}
+		Nêu hai ví dụ về mệnh đề toán học.
+	\end{luyentap}
+	
+	\begin{hd}
+		Trong hai mệnh đề toán học sau đây, mệnh đề nào là một khẳng định đúng? Mệnh đề nào là một khẳng định sai?
+	\end{hd}
+	
+	\begin{kttrongtam}
+		Mỗi mệnh đề toán học phải hoặc đúng hoặc sai. Một mệnh đề toán học không thể vừa đúng, vừa sai.
+	\end{kttrongtam}
+	
+	\begin{luyentap}
+		Nêu hai ví dụ về mệnh đề toán học.
+	\end{luyentap}
+	
+	\begin{hd}
+		Trong chương này, chúng ta tìm hiểu những nội dung sau: mệnh đề toán học, tập hợp và các phép toán trên tập hợp.
+	\end{hd}
+	
+	\begin{kttrongtam}
+		Mỗi mệnh đề toán học phải hoặc đúng hoặc sai. Một mệnh đề toán học không thể vừa đúng, vừa sai.
+	\end{kttrongtam}
+	
+	\baitap
+	\subsubsection{Bài tập trắc nghiệm}
+	\Opensolutionfile{ans}[Ans/vdtracnghiem]
+	%%%=============EX_1=============%%%
+	\begin{ex}%[0D1B2]
+		Cho tập hợp $B = \left\{x \in \mathbb{R}\big| x^2 - 3x - 4 = 0\right\}$. Dùng phương pháp liệt kê phần tử, xác định tập hợp $B$.
+		\choice{$B = \left\{-1\right\}$}
+		{$B = \left\{4\right\}$}
+		{$B = \left(-1;4\right)$}
+		{\True $B = \left\{-1;4\right\}$}
+		\loigiai{
+			Xét phương trình $x^2-3x-4=0 \Leftrightarrow x_1=-1;\, x_2=4$.\\
+			Cả hai giá trị trên đều là số thực nên tập $B$ có 2 phần tử hay $B=\{-1;4\}$.}
+	\end{ex}
+	
+	%%%=============EX_2=============%%%
+	\begin{ex}%[0D1B2]
+		Cho tập hợp $A = \left\{x \in \mathbb{N}\big| x^2 + 8x + 15 = 0\right\}$. Khẳng định nào sau đây đúng?
+		\choice{$A = \left\{-3;-5\right\}$}
+		{\True $A =\varnothing$}
+		{$A = \left\{\varnothing\right\}$}
+		{$A = \left\{0\right\}$}
+		\loigiai{
+			Xét phương trình $x^2 + 8x + 15 = 0$ vô nghiệm. Suy ra $A =\varnothing$.}
+	\end{ex}
+	
+	%%%=============EX_3=============%%%
+	\begin{ex}%[0D1K2]
+		Tập hợp $Y = \left\{a\right\}$ có bao nhiêu tập hợp con?
+		\choice{$\True 2$}
+		{$4$}
+		{$1$}
+		{$0$}
+		\loigiai{
+			Các tập con của tập $Y$ là $\varnothing$, $\{a\}$. Suy ra $Y$ có hai tập con.\\
+		}
+	\end{ex}
+	\Closesolutionfile{ans}
+	
+	\begin{center}
+		{\sffamily\bfseries\color{\mauchinh} BẢNG ĐÁP ÁN TRẮC NGHIỆM}
+	\end{center}
+	
+	\bangdapan{vdtracnghiem}
+	
+	\subsubsection{Bài tập tự luận}
+	
+	%%%=============BT_2=============%%%
+	\begin{bt}%[0D1K1-4]
+		Dùng thuật ngữ \lq\lq điều kiện cần\rq\rq\ để phát biểu các định lí sau.
+		\begin{enumerate}
+			\item Nếu $MA\perp MB$ thì $M$ thuộc đường tròn đường kính $AB$.
+			\item $a\ne 0$ hoặc $b\ne 0$ là điều kiện đủ để $a^2+b^2>0$.
+		\end{enumerate}
+		\loigiai{
+			\begin{enumerate}
+				\item Điều kiện cần để $MA\perp MB$ là $M$ thuộc đường tròn đường kính $AB$.\\
+				Hoặc: $M$ thuộc đường tròn đường kính $AB$ là điều kiện cần để $MA\perp ~MB$.
+				\item $a^2+b^2>0$ là điều kiện cần để $a\ne 0$ hoặc $b\ne 0$.
+			\end{enumerate}
+		}
+	\end{bt}
+	\timhieuthem
+	
+	\section{Tùy chọn hiển thị loigiai}
+	\subsection{Môi trường vd}
+	\subsubsection{Tạo dòng kẻ dựa trên nội dung lời giải}
+	\dongkevd
+	\begin{vd}%[0D1K2-1]
+		Viết mỗi tập hợp sau bằng cách nêu tính chất đặc trưng.
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item $A=\{2;3;5;7\}$.
+				\item $B=\{-3;-2;-1;0;1;2;3\}$.
+				\item $C=\{-5;0;5;10\}$.
+				\item $D=\{1;2;3;4;6;9;12;18;36\}$.
+			\end{enumerate}
+		\end{multicols}
+		\loigiai{
+			\begin{enumerate}
+				\item $A=\left\{x\in \mathbb{R}\big|\; x \text{ nguyên tố và } x<10\right\}$.
+				\item $B=\left\{x\in \mathbb{Z}\big|\;|x|\leqslant 3 \right\}$.
+				\item $C=\left\{x\in \mathbb{Z}\big|\; x\vdots 5,-5\leqslant x\leqslant 10 \right\}$.
+				\item $D=\left\{n\in \mathbb{N}\big|\; x \text{ là ước của } 36\right\}$.
+			\end{enumerate}
+		}
+	\end{vd}
+	
+	\subsubsection{Tạo dòng kẻ hai cột dựa trên nội dung lời giải}
+	\dongkeHaicotvd
+	\begin{vd}
+		Trong các tập hợp sau, tập hợp nào rỗng?
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item $A=\left\{\left. x\in \mathbb{R}\right|x^2-x+1=0\right\}$.
+				\item $B=\left\{\left. x\in \mathbb{Q}\right|\right.x^2-4x+2\left. =0\right\}$.
+				\item $C=\left\{\left. x\in \mathbb{Z}\right|\right.6x^2-7x+1\left. =0\right\}$.
+				\item $D=\left\{\left. x\in \mathbb{Z}\right|\right.\left| x\right|<\left. 1\right\}$.
+			\end{enumerate}
+		\end{multicols}
+		\loigiai{
+			\begin{enumerate}
+				\item Phương trình $x^2-x+1=0$ có $\Delta <0$ nên vô nghiệm. Do đó $A=\varnothing $.
+				\item Phương trình $x^2-4x+2=0$ có hai nghiệm $x=2\pm \sqrt{2}\notin \mathbb{Q}$. Do đó $B=\varnothing $.
+				\item Phương trình $6x^2-7x+1=0$ có nghiệm $x=1\in \mathbb{Z}$. Do đó $C\ne \varnothing $.
+				\item Chọn $x=0\in \mathbb{Z},\left| 0\right|<1$. Do đó $D\ne \varnothing $.
+			\end{enumerate}
+		}
+	\end{vd}
+	
+	\subsubsection{Ẩn nội dung lời giải}
+	\tatloigiaivd
+	\begin{vd}%[0D1K2-2]%
+		Cho $A=\{2;5\}, B=\{5;x\}, C=\{x;y;5\}$. Tìm các cặp số $\{x;y\}$ để $A=B=C$.
+		\loigiai{
+			Vì $A=B=C$ nên cả $3$ tập hợp $A$, $B$, $C$ chỉ chứa $2$ phần tử là $2$ và $5$.\\
+			Do đó ta có $\left\{\begin{aligned}
+				&x=2\\
+				&\left[
+				\begin{aligned}
+					&y=2\\
+					&y=5.\\
+				\end{aligned}\right.\\
+			\end{aligned}\right.$
+		}
+	\end{vd}
+	
+	\subsubsection{Hiển thị nội dung lời giải}
+	\hienthiloigiaivd
+	\begin{vd}%[0D1K3-3]
+		Kết quả kì thi khảo sát chất lượng của khối 12 có 18 học sinh đạt điểm giỏi môn Văn, 10 học sinh đạt điểm giỏi môn Anh, 12 học sinh đạt điểm giỏi môn Toán, 3 học sinh đạt điểm giỏi hai môn Văn và Toán, 4 học sinh đạt điểm giỏi hai môn Toán và Anh, 5 học sinh đạt điểm giỏi hai môn Anh và Văn, có 2 học sinh đạt điểm giỏi cả ba môn. Hỏi có bao nhiêu học sinh đạt điểm giỏi ít nhất một môn?
+		\loigiai{
+			\immini{Vẽ biểu đồ Ven để tìm số học sinh như sau\\
+				Qua biểu đồ tính được số học sinh bằng \[18+3+2+7=3.\]}{
+				\begin{tikzpicture}[font=\scriptsize,every node/.style={fill=white,inner sep=1pt}]
+					\def\r{1.65}
+					\def\elm {(-60:\r) ellipse (1.25*\r cm and \r cm)}; 
+					\def\elh {(90:0.1*\r) ellipse (1.25*\r cm and \r cm)}; 
+					\def\elb {(240:\r) ellipse (1.25*\r cm and \r cm)}; 
+					\begin{scope}[thin]
+						\draw[pattern=north west lines,pattern color=teal!65] \elm node[shift={(-30:1.5*\r)},scale=1.25]{Toán}; 
+						\draw[pattern=north east lines,pattern color=magenta!65] \elh node[shift={(30:1.5*\r)},scale=1.25]{Văn};
+						\draw[pattern=crosshatch dots,pattern color=gray!65]\elb node[shift={(210:1.5*\r)},scale=1.25]{Anh văn};
+					\end{scope}
+					\begin{scope} 
+						\clip \elm; \clip \elh;
+						\fill[white] \elb;
+						\fill[pattern=dots,pattern color=red] \elb;
+					\end{scope}
+					\draw[thick,teal] \elm; 
+					\draw[thick] \elh;
+					\draw[magenta,thick] \elb;
+					\path (-45:1.5*\r) node{12 $\Rightarrow$ \textbf{7}}
+					(90:0.5*\r) node{18 $\Rightarrow$ \textbf{12}}
+					(220:1.5*\r) node{10 $\Rightarrow$ \textbf{3}};
+					\path (-15:0.85*\r) node{3 $\Rightarrow$ \textbf{1}}
+					(195:0.85*\r) node{5 $\Rightarrow$ \textbf{3}}
+					(270:1.25*\r) node{4 $\Rightarrow$ \textbf{2}};
+					\path[color=red] (270:0.5*\r) node{2};
+				\end{tikzpicture}		
+			}
+		}
+	\end{vd}
+	
+	\begin{vd}
+		Cho hai tập hợp $A=\left\{0;1;2;3;4\right\}$ và $B=\left\{2;3;4;5;6\right\}$. 
+		Tìm các tập hợp $A\cup B$, $A\cap B$, $A\backslash B$, $B\backslash A$. 
+		\loigiai{
+			Ta có $A\backslash B=\left\{0;1\right\}$, $B\backslash A=\left\{5;6\right\}$, $A\cup B=\left\{0;1;2;3;4;5;6\right\}$, $A\cap B=\left\{2;3;4\right\}$.
+		}
+	\end{vd}
+	
+	\subsection{Môi trường ex}
+	\Opensolutionfile{ans}[Ans/ThuDapAn]
+	\subsubsection{Tạo dòng kẻ dựa trên nội dung lời giải}
+	\dongkeex
+	\begin{ex}
+		Trong các câu sau, câu nào \textbf{không} phải là mệnh đề?
+		\choice
+		{$5+2=8$}
+		{$2>0$}
+		{$4-\sqrt{17}>0$}
+		{\True $5+x=2$}
+		\loigiai{
+			Từ định nghĩa
+			\begin{itemize}
+				\item Mệnh đề là một câu khẳng định hoặc đúng hoặc sai.
+				\item Mệnh đề không thể là các câu hỏi, câu cảm thán.
+			\end{itemize}
+			Ta suy ra,
+			\lq\lq$5+x=2$\rq\rq\ không là một mệnh đề vì ta chưa biết tính đúng sai của nó.
+		}
+	\end{ex}
+	
+	\subsubsection{Tạo dòng kẻ dạng 2 cột}
+	\dongkeHaicotex
+	\begin{ex}
+		Câu nào sau đây là một \textbf{mệnh đề toán học}?
+		\choice
+		{Trung Quốc là nước đông dân nhất}
+		{\True Số 30 là số chẵn}
+		{$2x-1$ là số lẻ}
+		{$x^3+1=0$}
+		\loigiai{
+			Từ định nghĩa
+			\begin{itemize}
+				\item Mệnh đề là một câu khẳng định hoặc đúng hoặc sai.
+				\item Mệnh đề không thể là các câu hỏi, câu cảm thán.
+			\end{itemize}
+			Suy ra, \lq\lq Số 30 là số chẵn\rq\rq\ là một mệnh đề và là mệnh đề đúng.	
+		}
+	\end{ex}
+	
+	\subsubsection{Tắt lời giải}
+	\tatloigiaiex
+	\begin{ex}
+		Định lý có dạng $A\Rightarrow B$ được hiểu như thế nào?
+		\choice
+		{$A$ khi và chỉ khi $B$}
+		{$B$ suy ra $A$}
+		{$A$ là điều kiện cần để có $B$}
+		{\True $A$ là điều kiện đủ để có $B$}
+		\loigiai{
+			Với định lý dạng $A\Rightarrow B$ thì
+			\begin{itemize}
+				\item $A$ là điều kiện đủ để có $B$;
+				\item $B$ là điều kiện cần để có $A$.
+			\end{itemize} 
+		}
+	\end{ex}
+	
+	\subsubsection{Hiển thị lời giải}
+	\hienthiloigiaiex
+	\begin{ex}
+		Phủ định của mệnh đề \lq\lq$5+4=10$\rq\rq\ là mệnh đề nào sau đây?
+		\choice
+		{$5+4<10$}
+		{$5+4>10$}
+		{$5+4\le 10$}
+		{\True $5+4\ne 10$}
+		\loigiai{
+			Phủ định của \lq\lq$5+4=10$\rq\rq\ là \lq\lq$5+4\ne10$\rq\rq.
+		}
+	\end{ex}
+	\Closesolutionfile{ans}
+	\subsection{Môi trường bt}
+	\subsubsection{Tạo dòng kẻ dựa trên nội dung lời giải}
+	\dongkebt
+	\begin{bt}
+		Cho các tập hợp sau
+		\begin{itemize}
+			\item $A=\left\{\left. x\in \mathbb{Z}\right|-1\le x<6\right\}$;
+			\item $B=\left\{\left. x\in \mathbb{Q}\right|\left(1-3x\right)\left(x^4-3x^2+2\right)=0\right\}$;
+			\item $C=\left\{0;1;2;3;4;5;6\right\}$.
+		\end{itemize}
+		
+		\begin{enumerate}
+			\item Viết các tập hợp $A, B$ dưới dạng liệt kê các phần tử.
+			\item Tìm $A\cap B,A\cup B,A\backslash B,{C}_{B\cup A}\left(A\cap B\right)$.
+			\item Chứng minh rằng $A\cap (B\cup C)=A.$
+		\end{enumerate}
+		\loigiai{
+			\begin{enumerate}
+				\item Ta có $A=\left\{-1; 0; 1; 2; 3; 4; 5\right\}$, $B=\left\{-1;\dfrac{1}{3};1\right\}$.
+				\item Suy ra $A\cap B=\left\{-1;1\right\}$, $A\cup B=\left\{-1;0;\dfrac{1}{3};1;2;3;4;5\right\}$, $A\backslash B=\left\{0;2;3;4;5\right\}$ và ${C}_{B\cup A}\left(A\cap B\right)=\left\{0;\dfrac{1}{3};2;3;4;5\right\}$.
+				\item Ta có $B\cup C=\left\{-1;0;1/3;1;2;3;4;5;6\right\}$ suy ra $A\cap \left(B\cup C\right)=\left\{-1;0;1;2;3;4;5\right\}=A$.
+			\end{enumerate}
+		}
+	\end{bt}
+	
+	\subsubsection{Tạo dòng kẻ 2 cột trên nội dung lời giải}
+	\dongkeHaicotbt
+	\begin{bt}
+		Cho hai tập $A$, $B$ khác $\varnothing $, $A\cup B$ có $6$ phần tử, số phần tử của $A\cap B$ bằng nửa số phần tử của $B$. Hỏi $A$, $B$ có thể có bao nhiêu phần tử?
+		\loigiai{
+			Gọi $x$ là số phần tử của $A$ và $y$ là số phần tử của $B$ với $x,y\in {\mathbb{Z}}^{+}$. Ta có: 
+			\begin{itemize}
+				\item $n(A \cap B)=\dfrac{1}{2}y \Rightarrow y $ là số chẵn.
+				\item $n(A\cup B)=n(A)+n(B)-n(A \cap B) \Leftrightarrow 6=x+y-\dfrac{1}{2}y \Leftrightarrow x+\dfrac{1}{2}y=6$.
+				\item Mặt khác $n(A) \geq n(A \cap B)$, suy ra $ x \geq \dfrac{1}{2}y$.
+			\end{itemize}
+			Xét 
+			$$x+\dfrac{1}{2}y \geq \dfrac{1}{2}y+\dfrac{1}{2}y \Leftrightarrow 6 \geq y; \text{ mà } y \text{ chẵn nên } y \in \{2;4;6\}. $$
+			Từ đây ta có ba khả năng sau:
+			\begin{itemize}
+				\item Nếu $y=2$ thì $x=5$ hay tập $A$ có 5 phần tử, tập $B$ có 2 phần tử và số phần tử chung là 1 phần tử.
+				\item Nếu $y=4$ thì $x=4$ hay tập $A$ có 4 phần tử, tập $B$ có 4 phần tử và số phần tử chung là 2 phần tử.
+				\item Nếu $y=6$ thì $x=3$ hay tập $A$ có 3 phần tử, tập $B$ có 6 phần tử và số phần tử chung là 3 phần tử.
+			\end{itemize}
+		}
+	\end{bt}
+	
+	\subsubsection{Ẩn nội dung lời giải}
+	\tatloigiaibt
+	\begin{bt}
+		Cho các tập hợp
+		\begin{itemize}
+			\item $A=\left\{\left. x\in \mathbb{R}\right|\left(x^2+7x+6\right)\left(x^2-4\right)=0\right\}$
+			\item $B=\left\{\left. x\in \mathbb{N}\right|2x\le 8\right\}$
+			\item $C=\left\{\left. 2x+1\right|x\in \mathbb{Z}\right.$ và $\left.-2\le x\le 4\right\}$.
+		\end{itemize}
+		\begin{enumerate}
+			\item Hãy viết lại các tập hợp $A, B, C$ dưới dạng liệt kê các phần tử.
+			\item Tìm $A\cup B$, $A\cap B$, $B\backslash C$, ${C}_{A\cup B}\left(B\backslash C\right)$.
+			\item Tìm $\left(A\cup C\right)\backslash B$.
+		\end{enumerate}	
+		\loigiai{
+			\begin{enumerate}
+				\item Phương trình $\left(x^2+7x+6\right)\left(x^2-4\right)=0\Leftrightarrow \hoac{
+					& x^2+7x+6=0 \\ 
+					& x^2-4=0 \\}\Leftrightarrow \hoac{
+					& x=-1\vee x=-6 \\ 
+					& x=-2\vee x=2 \\}$.\\
+				Vậy $A=\left\{-6;-2;-1;2\right\}$.\\
+				Ta có $\heva{
+					& x\in \mathbb{N} \\ 
+					& 2x\le 8 \\}\Leftrightarrow \heva{
+					& x\in \mathbb{N} \\ 
+					& x\le 4 \\}\Leftrightarrow x\in \left\{0,1,2,3,4\right\}$. Vậy $B=\left\{0;1;2;3;4\right\}$.\\
+				Ta có $\heva{
+					& x\in \mathbb{Z} \\ 
+					&-2\le x\le 4 \\}\Leftrightarrow x\in \left\{-2,-1,0,1,2,3,4\right\}$. Vậy $C=\left\{-3;-1;1;3;5;7;9\right\}$.
+				\item Suy ra $A\cup B=\left\{-6;-2;-1;0;1;2;3;4\right\}$, $A\cap B=\left\{2\right\}$, $B\backslash C=\left\{0;2;4\right\}$, 
+				${C}_{A\cup B}\left(B\backslash C\right)=\left(A\cup B\right)\backslash \left(B\backslash C\right)=\left\{-6;-2;-1;1;3\right\}$.
+				\item Ta có $A\cup C=\left\{-6;-3;-2;-1;1;2;3;5;7;9\right\}$. Suy ra $(A\cup C)\backslash B=\left\{-6;-3;-2;-1;5;7;9\right\}$.
+			\end{enumerate}
+		}
+	\end{bt}
+	
+	\subsubsection{Hiển thị nội dung lời giải}
+	\hienthiloigiaibt
+	\begin{bt}%[0D1B4-2]
+		Cho đoạn $A=[-5;1]$ và khoảng $B=(-3;2)$. Xác định $A\cup B$, $A\cap B$, $A\setminus B$, $C_{\mathbb{R}}B$.
+		\loigiai{
+			Ta có
+			\begin{itemize}
+				\item $A\cup B=[-5;2)$.
+				\item $A\cap B=(-3;1]$.
+				\item $A\setminus B=[-5;-3]$.
+				\item $C_{\mathbb{R}}B=\mathbb{R}\setminus B=(-\infty;-3]\cup [2;+\infty)$.
+			\end{itemize} 
+		}
+	\end{bt}
+	
+	\subsubsection{Lưu nội dung lời giải, hiện thị phía sau}
+	\luuloigiaibt
+	\Opensolutionfile{ansbt}[Ans/LoigiaiBT1]
+	\begin{bt}%[0D1B4-1]
+		Cho các tập hợp $A=\left\{x\in \mathbb{R}\big|x^2\leqslant 4\right\}$, $B=\left\{x\in \mathbb{R}\big|x<1\right\}$. Viết các tập hợp sau đây $A\cup B$, $A\cap B$, $A\setminus B$, $ C_{\mathbb{R}}B$ dưới dạng các khoảng, nửa khoảng, đoạn.
+		\loigiai{
+			Ta có $A=[-2;2]$ và $B=(-\infty;1)$, suy ra
+			\begin{itemize}
+				\item $A\cup B=[-2;2]\cup (-\infty;1)=(-\infty;2]$.
+				\item $A\cap B=[-2;2]\cap (-\infty;1)=[-2;1)$.
+				\item $A\setminus B=[-2;2]\setminus (-\infty;1)=[1;2]$.
+				\item $C_{\mathbb{R}}B=[1;+\infty)$.
+			\end{itemize}
+		}
+	\end{bt}
+	
+	\begin{bt}%[0D1B2-1]
+		Viết các tập hợp sau bằng phương pháp nêu ra tính đặc trưng.
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item $ A=\{1,2,3,4,5,6,7,8,9 \} $.%\dapso{$ A=\{x \in \mathbb{N^*} | x<10\} $}
+				\item $ D=\{1,2,4,8,16,32,64,128,256,512\} $.%\dapso{$D=\{2^n | n \in \mathbb{N}, n \le 9 \} $}
+				\item Tập hợp các số chẵn.%\dapso{$ E=\{2n | n \in \mathbb{Z}\} $}
+				\item Tập hợp các số lẻ.%\dapso{$ F=\{2n+1 | n \in \mathbb{Z}\} $}
+			\end{enumerate}
+		\end{multicols}	
+		\loigiai{
+			\begin{multicols}{2}
+				\begin{enumerate}
+					\item $ A=\{x \in \mathbb{N^*} | x<10\} $.
+					\item $ D=\{2^n | n \in \mathbb{N}, n \le 9 \} $.
+					\item $ E=\{2n | n \in \mathbb{Z}\} $.
+					\item $ F=\{2n+1 | n \in \mathbb{Z}\} $.
+				\end{enumerate}
+			\end{multicols}
+		}
+	\end{bt}
+	
+	\begin{bt}%[0D1K2-1]
+		Viết mỗi tập hợp sau đây theo cách nêu tính chất đặc trưng.
+		\begin{enumerate}
+			\item Tập hợp các điểm $M$ trên mặt phẳng $(P)$, thuộc đường tròn tâm $O$ và đường kính $2R$.
+			\item Tập hợp các điểm $M$ trên mặt phẳng $(P)$, thuộc hình tròn tâm $O$.
+		\end{enumerate}
+		\loigiai{
+			\begin{enumerate} 
+				\item $A=\left\{M\in (P)\big| OM=R \text{ với } O \text{ cố định cho trước}\right\}$.
+				\item $B=\left\{M\in (P)\big| OM\leqslant R\text{ với } O \text{ cố định cho trước}\right\}$.
+			\end{enumerate}
+		}
+	\end{bt}
+	\Closesolutionfile{ansbt}
+	
+	\begin{center}
+		{\bfseries\sffamily\color{\mauchinh} HƯỚNG DẪN SỬA BÀI TẬP}
+	\end{center}
+	
+	\input{Ans/LoigiaiBT1}
+	\setcounter{section}{2}
+	\section{Đánh dấu sao theo mức nhận thức của câu hỏi}
+	
+	\vspace*{0.5cm}
+	\subsection{Thông tin mặc định}
+	\begin{vdsao}
+		Nội dung ví dụ.
+	\end{vdsao}
+	
+	\begin{btsao}
+		\begin{enumerate} 
+			\item Cho phương trình bậc hai $x^2-2 m x+3 m-2=0$ trong đó $x$ là ẩn, $m$ là tham số. Tìm tất cả các giá trị của $m$ để phương trình đã cho có hai nghiệm $x_1, x_2$ và $x_1^2+x_2^2$ đạt giá trị nhỏ~nhất.
+			\item Cho tam thức bậc hai $f(x)=a x^2+b x+c, a \neq 0$ Chứng minh rằng nếu $f(x) \geq 0$ với mọi $x \in \mathbb{R}$ thì $4 a+c \geq 4 b$.
+		\end{enumerate}
+		\loigiai{
+			\begin{enumerate} 
+				\item Phương trình đã cho có hai nghiệm suy ra $\Delta^{\prime}=m^2-3 m+2 \geq 0 \Leftrightarrow\hoac{&m \geq 2 \\ &m \leq 1.}$
+			\end{enumerate}
+		}
+	\end{btsao}
+	
+	
+	\begin{exsao}
+		Phủ định của mệnh đề \lq\lq$5+4=10$\rq\rq\ là mệnh đề nào sau đây?
+		\choice
+		{$5+4<10$}
+		{$5+4>10$}
+		{$5+4\le 10$}
+		{\True $5+4\ne 10$}
+		\loigiai{
+			Phủ định của \lq\lq$5+4=10$\rq\rq\ là \lq\lq$5+4 \ne 10$\rq\rq.
+		}
+	\end{exsao}
+	
+	\subsection{Thông tin nguồn câu hỏi}
+	
+	\begin{vdsao}[Thông tin ví dụ]
+		Nội dung ví dụ.
+	\end{vdsao}
+	
+	\begin{btsao}[Thông tin câu hỏi]
+		Cho phương trình bậc hai $x^2-2 m x+3 m-2=0$ trong đó $x$ là ẩn, $m$ là tham số. Tìm tất cả các giá trị của $m$ để phương trình đã cho có hai nghiệm $x_1, x_2$ và $x_1^2+x_2^2$ đạt giá trị nhỏ~nhất.
+		\loigiai{
+			Phương trình đã cho có hai nghiệm suy ra $\Delta^{\prime}=m^2-3 m+2 \geq 0 \Leftrightarrow\hoac{&m \geq 2 \\ &m \leq 1.}$
+		}
+	\end{btsao}
+	
+	\begin{exsao}[Thông tin câu hỏi]
+		Phủ định của mệnh đề \lq\lq$5+4=10$\rq\rq\ là mệnh đề nào sau đây?
+		\choice
+		{$5+4<10$}
+		{$5+4>10$}
+		{$5+4\le 10$}
+		{\True $5+4\ne 10$}
+		\loigiai{
+			Phủ định của \lq\lq$5+4=10$\rq\rq\ là \lq\lq$5+4 \ne 10$\rq\rq.
+		}
+	\end{exsao}
+	
+	\subsection{Thông tin về mức khó}
+	
+	\begin{vdsao}[Thông tin ví dụ][3]
+		Nội dung ví dụ.
+	\end{vdsao}
+	
+	\begin{btsao}[Thông tin câu hỏi][4]
+		Cho phương trình bậc hai $x^2-2 m x+3 m-2=0$ trong đó $x$ là ẩn, $m$ là tham số. Tìm tất cả các giá trị của $m$ để phương trình đã cho có hai nghiệm $x_1, x_2$ và $x_1^2+x_2^2$ đạt giá trị nhỏ~nhất.
+		\loigiai{
+			Phương trình đã cho có hai nghiệm suy ra $\Delta^{\prime}=m^2-3 m+2 \geq 0 \Leftrightarrow\hoac{&m \geq 2 \\ &m \leq 1.}$
+		}
+	\end{btsao}
+	
+	\begin{exsao}[Thông tin câu hỏi][3]
+		Phủ định của mệnh đề \lq\lq$5+4=10$\rq\rq\ là mệnh đề nào sau đây?
+		\choice
+		{$5+4<10$}
+		{$5+4>10$}
+		{$5+4\le 10$}
+		{\True $5+4\ne 10$}
+		\loigiai{
+			Phủ định của \lq\lq$5+4=10$\rq\rq\ là \lq\lq$5+4 \ne 10$\rq\rq.
+		}
+	\end{exsao}
+\end{document}
+
+
