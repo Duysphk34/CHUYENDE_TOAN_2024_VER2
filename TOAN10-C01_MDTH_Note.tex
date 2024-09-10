@@ -1,0 +1,127 @@
+\documentclass[Main.tex]{subfiles}
+\renewcommand{\loigiai}[1]{%
+	\par\noindent%
+	{\color{dndo}\reflectbox{\Large\WritingHand}\ {\fmmfamily\LARGE Lời giải.}} #1
+}
+\begin{document}
+	\newcommand{\nhanmanh}[2][darkmidnightblue]{{\large\color{#1}\textit{#2}}}
+	\setcounter{tocdepth}{1}
+	\setcounter{secnumdepth}{3}
+	\begin{center}
+		\begin{tcolorbox}[enhanced,hbox,
+			left=8mm,right=8mm,boxrule=0.55pt,
+			bottom=3pt,
+			colback=cyan!5,colframe=darkmidnightblue,
+			% drop fuzzy midday shadow=black!50!yellow,
+			drop lifted shadow=black!50!darkmidnightblue,arc is angular,
+			before=\par\vspace*{-1mm},after=\par\bigskip]
+			{\Large\bfseries\sffamily\color{darkmidnightblue} MỤC LỤC}
+		\end{tcolorbox}
+	\end{center}
+	
+	\vspace*{-0.5cm}
+	\makeatletter
+	\@starttoc{toc}
+	\makeatother
+	
+	\def\muctieu{Trong chương này, chúng ta tìm hiểu những nội dung sau: mệnh đề toán học, tập hợp và các phép toán trên tập hợp.}
+	\chapter{Mệnh đề toán học tập hợp}
+	
+	\section{Mệnh đề toán học}
+	\taoNdongke[5]{hd}
+	\taoNdongke[5]{luyentap}
+	\dongkevd
+	\noindent
+	H' Maryam: \lq\lq\textit{Số $15$ chia hết cho $5$}\rq\rq
+	
+	\noindent
+	Phương: \lq\lq\textit{Việt Nam là một nước ở khu vực Đông Nam Á}\rq\rq
+	
+	\begin{cauhoikd}
+		Trong hai phát biểu trên, phát biểu nào là mệnh đề toán học?
+	\end{cauhoikd}
+	
+	\subsection{Mệnh đề toán học}
+	
+	\begin{hd}
+		\begin{enumerate}
+			\item Phát biểu của bạn H'Maryam có phải là một câu khẳng định về tính chất chia hết trong toán học hay không?
+			\item Phát biểu của bạn Phương có phải là một câu khẳng định về một sự kiện trong toán học hay không?
+		\end{enumerate}
+		\loigiai{Phát biểu của bạn H'Maryam là một mệnh đề khẳng định về một sự kiện trong toán học, gọi là mệnh đề toán học.
+			Như vậy, phát biểu của bạn Phương không phải là mệnh đề toán học.
+		}
+	\end{hd}
+	\begin{luuy}
+		Chú ý: Khi không sợ nhầm lẫn, ta thường gọi tắt mệnh đề toán học là mệnh đề.
+	\end{luuy}
+	
+	%%%==============Vidu1==============%%%
+	\begin{vd} Phát biểu nào sau đây là một mệnh đề toán học?
+		\begin{enumerate}
+			\item Số 7 là số nguyên tố
+			\item Đi học đi!
+			\item Paris là thủ đô của Đức.
+			\item Nếu hôm nay trời mưa, tôi sẽ mang ô.
+		\end{enumerate}
+		\loigiai{
+			\begin{enumerate}
+				\item Đây một mệnh đề toán học.
+				\item là một câu ra lệnh.
+				\item là một câu khẳng định nhưng không phải là mệnh đề toán học.
+				\item là một câu điều kiện không phải câu khẳng định
+			\end{enumerate}
+		}
+	\end{vd}
+	%%%==============HetVidu1==============%%%
+	\begin{luyentap}
+		Nêu hai ví dụ về mệnh đề
+		\loigiai{}
+	\end{luyentap}
+	\begin{hd}
+		Trong hai mệnh đề toán học sau đây, mệnh đề nào là một khẳng định đúng?
+		Mệnh đề nào là một khẳng định sai?\\
+		$P$: "Tổng hai góc đối của một tứ giác nội tiếp bằng $180^{\circ}$ ";\\
+		$Q:$ " $\sqrt{2}$ là số hữu tì".
+		\loigiai{}
+	\end{hd}
+	\begin{tomtat}
+		Mỗi mệnh đề toán học phải hoặc đúng hoặc sai. Một mệnh đề toán học không thể vừa đúng, vừa sai.
+	\end{tomtat}
+\newpage
+%%%==============Vidu1==============%%%
+	\begin{paracol}{2}
+		\begin{vd}
+			Tìm mệnh đề đúng trong những mệnh đề sau: \\
+			$A$: "Tam giác có ba cạnh"; \\
+			$B$: "1 là số nguyên tố".
+		\end{vd}
+		\switchcolumn
+		\begin{luyentap}
+			Nêu ví dụ về một mệnh đề đúng và một mệnh đề sai.
+		\end{luyentap}
+	\end{paracol}
+%%%==============HetVidu1==============%%%
+\subsection{Mệnh đề chứa biến}
+	\begin{hd}
+		Xét câu " $n$ chia hết cho 3 " với $n$ là số tự nhiên.
+		\begin{enumerate}[a)]
+			\item  Ta có thể khẳng định được tính đúng sai của câu trên hay không?
+			\item  Vối $n=21$ thì câu " 21 chia hết cho 3 " có phải là mệnh đề toán học hay không? Nếu là mệnh đề toán học thì mệnh đề đó đúng hay sai?
+			\item  Vối $n=10$ thì câu " 10 chia hết cho 3 " có phải là mệnh đề toán học hay không? Nếu là mệnh đề toán học thì mệnh đề đó đúng hay sai?
+		\end{enumerate}
+	\end{hd}
+	\begin{hd}
+		Với mỗi mệnh đề chứa biến sau, tìm những giá trị của biến để nhận được một mệnh đề đúng và một mệnh đề sai.
+		\begin{enumerate}[a)]
+			\item  $P(x)$: " $x^2=2$ ";
+			\item  $Q(x):$: $x^2+1>0$ ",
+			\item  $R(n)$: " $n+2$ chia hết cho 3 " ($n$ là số tự nhiên).
+		\end{enumerate}
+	\end{hd}
+\subsection{Phủ định của một mệnh đề}
+\subsection{Mệnh đề kéo theo}
+\subsection{Mệnh đề đảo. hai mệnh đề tương đương}
+\subsection{Kí hiệu $\forall$ và $\exists$}
+
+\end{document}
